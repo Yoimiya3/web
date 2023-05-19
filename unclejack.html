@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Farmsiter</title>
+
+</head>
+
+
+<body>
+<section id="header">
+       
+        
+        <div>
+            <ul  id="navbar">
+                <a href="unclejack.html" class="navbar-brand">
+                    <img src="UNCLE JACK, complete transparent.png" alt="Logo">
+                <li> <a href="unclejack.html">Home</a></li>
+                <li> <a href="products.html">Products</a></li>
+                <li> <a href="aboutus.html">About Us</a></li>
+                <li> <a href="aboutdev.html">About Developers</a></li>
+            </ul>  
+        </div>
+
+        
+</section>
+
+
+<!--header---------------------------------------------------------------------->
+
+
+<section id="home">
+   
+
+    
+
+    <img src="UNCLE JACK, complete transparent.png" alt="" id="uncle">
+
+    <h1> "Where Quality Meats Excellence!"</h1>
+
+    <a href="products.html"  id="prod">
+        SEE PRODUCTS AND PRICES 
+    </a> 
+
+    
+
+    <div class="form-container">
+        <form id="myForm" onsubmit="return validateForm()">
+          <div class="form-group">
+            <h1>Get in touch with us!</h1>
+            <br>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+
+      
+    
+</section>
+
+
+<!--script-->
+<script> 
+function validateForm() {
+      var fname = document.forms["myForm"]["fname"].value;
+      var lname = document.forms["myForm"]["lname"].value;
+      var email = document.forms["myForm"]["email"].value;
+
+      if (fname === "" || lname === "" || email === "") {
+        alert("Please fill out all fields");
+        return false;
+      }
+      // Add more validation logic if needed
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

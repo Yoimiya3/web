@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       
+</section>
+<!---home   -->
+
+<section id="header">
+       
+        
+    <div>
+        <ul  id="navbar">
+            <a href="unclejack.html" class="navbar-brand">
+                <img src="UNCLE JACK, complete transparent.png" alt="Logo">
+            <li> <a href="unclejack.html">Home</a></li>
+            <li> <a href="products.html">Products</a></li>
+            <li> <a href="aboutus.html">About Us</a></li>
+            <li> <a href="aboutdev.html">About Developers</a></li>
+        </ul>  
+    </div>
+    
+</section>
+
+
+<section>
+    <div id="imageContainer">
+        <img  src="10% Off.png" alt="" width="1300px" height="700px"  style="padding-left: 16%; padding-bottom: 4%; padding-top: 3%;">
+        <img  src="member.png" alt="" width="1300px" height="700px"  style="padding-left: 16%; padding-bottom: 4%; padding-top: 3%;">
+        <img  src="promo.png" alt="" width="1300px" height="700px"  style="padding-left: 16%; padding-bottom: 4%; padding-top: 3%;">
+    </div>
+
+</section>
+
+<section>
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" style="justify-content: center; display: flex;"> 
+        <a href="frozenproducts.html">
+        <img class="hover-image" src="pork.png" alt="" width="400px" height="400px"  style="margin: 30px;" >
+        </a>
+
+        <a href="seafood.html">
+        <img class="hover-image" src="seafood.png" alt=""  width="400px" height="400px" style="margin: 30px;">
+         </a>
+        
+        <a href="korean.html">
+        <img class="hover-image" src="korean.png" alt=""   width="400px" height="400px" style="margin: 30px;">
+         </a>
+        
+    </div>  
+</section>
+
+<script>
+var images = document.querySelectorAll('#imageContainer img');
+var currentImageIndex = 0;
+
+function switchImage() {
+  images[currentImageIndex].classList.remove('active');
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  images[currentImageIndex].classList.add('active');
+}
+
+setInterval(switchImage, 3000);
+
+
+</script>
+
+</body>
+</html>
